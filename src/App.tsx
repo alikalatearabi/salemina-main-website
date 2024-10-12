@@ -8,7 +8,9 @@ import KeyFeatures from './components/KeyFeatures/keyFeatures';
 import InfoCard from './components/Information/infoCard';
 import { infoCardText } from './components/Information/infoCardDesc';
 import Dependency from './components/Dependency/dependency';
-import Suggestions from './components/suggestions/suggestions';
+import Suggestions from './components/Suggestions/suggestions';
+import Story from './components/Story/story';
+import Blog from './components/Blog/blog';
 
 
 const { Content } = Layout;
@@ -26,6 +28,8 @@ const App: React.FC = () => {
         <InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} />
         <Dependency />
         <Suggestions />
+        <Story />
+        <Blog />
       </Content>
     </Layout>
   );
