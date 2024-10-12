@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import { Layout } from 'antd';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Home from './components/Home/home';
+import KeyFeatures from './components/KeyFeatures/keyFeatures';
+import InfoCard from './components/Information/infoCard';
+import { infoCardText } from './components/Information/infoCardDesc';
+import Dependency from './components/Dependency/dependency';
+import Suggestions from './components/suggestions/suggestions';
 
+
+const { Content } = Layout;
+
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Layout style={{ height: '100%' }}>
+      <Navbar />
+      <Content style={{ backgroundColor: '#fff', height: 'Calc(100% - 70px)' }}>
+        <Home />
+        <KeyFeatures />
+        <InfoCard title={infoCardText[0].title} description={infoCardText[0].description} direction='rtl' justify='justify' image={infoCardText[0].image} />
+        <InfoCard title={infoCardText[1].title} description={infoCardText[1].description} direction='ltr' justify='end' image={infoCardText[1].image} />
+        <InfoCard title={infoCardText[2].title} description={infoCardText[2].description} direction='rtl' justify='justify' image={infoCardText[2].image} />
+        <InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} />
+        <Dependency />
+        <Suggestions />
+      </Content>
+    </Layout>
+  );
+};
 
-export default App
+export default App;

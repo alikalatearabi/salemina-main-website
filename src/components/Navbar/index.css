@@ -1,0 +1,42 @@
+.ant-layout-header {
+    background: #fff;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    height: 70px;
+}
+
+.navbar .ant-menu {
+    flex: 1;
+}
+
+.navbar .ant-menu-item {
+    font-size: 20px;
+    font-family: 'yekan';
+
+    span {
+        color: #212B36;
+    }
+}
+
+.navbar .ant-btn {
+    background-color: #018A08;
+    font-family: 'yekan';
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+
+.navbar .ant-btn:hover {
+    background: #45a049 !important;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #018A08;
+    font-family: 'yekan';
+    margin-left: 100px;
+}

@@ -1,0 +1,68 @@
+.keyFeatures {
+    position: relative;
+    height: calc(100% + 70px);
+    background-image: url('../../assets/images/keyFeatureBack.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: ellipse(130% 100% at 50% 100%);
+    direction: rtl;
+    padding: 80px 120px;
+    font-family: 'yekan';
+
+    .lowerArc {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: white;
+        clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    .title {
+        color: white;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        span {
+            font-size: 22px;
+        }
+    }
+
+    .featureCardsWrapper {
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: 'yekan';
+
+        .featureCard {
+            height: 220px;
+            background-color: white;
+            border-radius: 20px;
+            margin: 10px 0;
+            padding: 20px;
+
+            h2 {
+                font-size: 20px;
+                color: #013C04;
+                margin: 6px 0;
+            }
+
+            span {
+                
+                color: #015B05;
+                font-size: 17px;
+            }
+
+            .featureCardIcon {
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+}

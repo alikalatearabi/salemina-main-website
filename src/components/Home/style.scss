@@ -1,0 +1,60 @@
+.home {
+    direction: rtl;
+    padding: 0 120px;
+    font-family: 'yekan';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 100px);
+
+    h1 {
+        font-size: 70px;
+        color: #013C04;
+        margin: 0 0 20px 0;
+    }
+
+    p {
+        font-size: 40px;
+        color: #015B05;
+        font-weight: 600;
+        margin: 0 0 50px 0;
+    }
+
+    .homeImage {
+        width: 600px;
+    }
+
+
+    .buttonsWrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .directDownload {
+            background-color: #018A08;
+            font-family: 'yekan';
+            font-size: 18px;
+            padding: 20px 30px;
+            border-radius: 12px;
+            margin-left: 10px;
+            min-width: 200px;
+
+            &:hover {
+                background: #018A08 !important;
+            }
+        }
+
+        .unDirectDownload {
+            background-color: #181D25;
+            font-family: 'yekan';
+            font-size: 18px;
+            padding: 20px 30px;
+            border-radius: 12px;
+            margin-left: 10px;
+            min-width: 200px;
+
+            &:hover {
+                background: #181D25 !important;
+            }
+        }
+    }
+}
