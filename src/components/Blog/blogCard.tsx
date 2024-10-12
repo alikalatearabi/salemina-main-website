@@ -1,5 +1,4 @@
 import './style.scss'
-import arrowLeft from '../../assets/icons/arrow-left.svg'
 
 interface BlogCardProps {
     image: string,
