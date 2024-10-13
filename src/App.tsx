@@ -11,6 +11,7 @@ import Dependency from './components/Dependency/dependency';
 import Suggestions from './components/Suggestions/suggestions';
 import Story from './components/Story/story';
 import Blog from './components/Blog/blog';
+import Footer from './components/Footer/footer';
 
 
 const { Content } = Layout;
@@ -30,6 +31,7 @@ const App: React.FC = () => {
         <Suggestions />
         <Story />
         <Blog />
+        <Footer />
       </Content>
     </Layout>
   );

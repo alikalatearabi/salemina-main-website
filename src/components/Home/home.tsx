@@ -1,5 +1,4 @@
 import { Button } from 'antd';
-// import homeImage from '../../assets/images/home.jpg'
 import downloadIcon from '../../assets/icons/download.svg'
 import bazarIcon from '../../assets/icons/cafeBazar.svg'
 import myketIcon from '../../assets/icons/myket.svg'
