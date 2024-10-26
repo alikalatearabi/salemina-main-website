@@ -1,6 +1,7 @@
 import { storyText } from "./storyText";
 import arrowLeft from '../../assets/icons/arrow-left.svg'
 import './style.scss'
+import { Link } from "react-router-dom";
 
 
 export default function story() {
@@ -8,10 +9,10 @@ export default function story() {
     <div className='story'>
             <h2>{storyText.title}</h2>
             <p>{storyText.description}</p>
-            <div className='storyLink'>
+            <Link to={'/story'} className='storyLink'>
                 <span>مشاهده بیشتر</span>
                 <img src={arrowLeft} alt='arrowLeftIcon'/>
-            </div>
+            </Link>
         </div>
   )
 }
