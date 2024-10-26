@@ -1,39 +1,51 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 import './App.css'
 
+import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/home';
 import KeyFeatures from './components/KeyFeatures/keyFeatures';
 import InfoCard from './components/Information/infoCard';
 import { infoCardText } from './components/Information/infoCardDesc';
 import Dependency from './components/Dependency/dependency';
-import Suggestions from './components/Suggestions/suggestions';
+import Suggestions from './components/suggestions/suggestions';
 import Story from './components/Story/story';
 import Blog from './components/Blog/blog';
 import Footer from './components/Footer/footer';
-
+import DependencyPage from './components/DependencyPage/dependency_page';
 
 const { Content } = Layout;
 
 const App: React.FC = () => {
   return (
-    <Layout style={{ height: '100%' }}>
-      <Navbar />
-      <Content style={{ backgroundColor: '#fff', height: 'Calc(100% - 70px)' }}>
-        <Home />
-        <KeyFeatures />
-        <InfoCard title={infoCardText[0].title} description={infoCardText[0].description} direction='rtl' justify='justify' image={infoCardText[0].image} />
-        <InfoCard title={infoCardText[1].title} description={infoCardText[1].description} direction='ltr' justify='end' image={infoCardText[1].image} />
-        <InfoCard title={infoCardText[2].title} description={infoCardText[2].description} direction='rtl' justify='justify' image={infoCardText[2].image} />
-        <InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} />
-        <Dependency />
-        <Suggestions />
-        <Story />
-        <Blog />
-        <Footer />
-      </Content>
-    </Layout>
+    <Router>
+      <Layout style={{ height: '100%' }}>
+        <Navbar />
+        <Content style={{ backgroundColor: '#fff', height: 'Calc(100% - 70px)' }}>
+          <Routes>
+            <Route path='/' element={
+              <>
+                <Home />
+                <KeyFeatures />
+                <InfoCard title={infoCardText[0].title} description={infoCardText[0].description} direction='rtl' justify='justify' image={infoCardText[0].image} />
+                <InfoCard title={infoCardText[1].title} description={infoCardText[1].description} direction='ltr' justify='end' image={infoCardText[1].image} />
+                <InfoCard title={infoCardText[2].title} description={infoCardText[2].description} direction='rtl' justify='justify' image={infoCardText[2].image} />
+                <InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} />
+                <Dependency />
+                <Suggestions />
+                <Story />
+                <Blog />
+              </>
+            }>
+            </Route>
+            <Route path="/dependency" element={<DependencyPage />} />
+          </Routes>
+          <Footer />
+        </Content>
+      </Layout>
+    </Router>
+
   );
 };
 
