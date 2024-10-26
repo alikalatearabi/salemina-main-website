@@ -1,8 +1,4 @@
 import StoryImage from '../../assets/images/storyPage.jfif';
-import nutritionImage from '../../assets/images/nutritions.png';
-import stopSignsImage from '../../assets/images/stopSigns.png';
-import healthStickImage from '../../assets/images/healthStick.jpg';
-import heartAssociationImage from '../../assets/images/heartAssociation.png';
 
 import Blog from '../Blog/blog';
 import { storyDescription, storyText } from './story_page_text';
