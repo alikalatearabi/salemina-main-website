@@ -1,22 +1,22 @@
 import './style.scss'
 
 interface BlogCardProps {
-    image: string,
-    title: string,
-    description: string
+  image: string,
+  title: string,
+  description: string
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({image, title, description}) => {
+const BlogCard: React.FC<BlogCardProps> = ({ image, title, description }) => {
   return (
     <div className="blogCard">
-        <img src={image} alt='blogCardImage' className='blogCardImage' />
-        <div className='blogCardText'>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <div className='blogShowMoreWrapper'>
-                <span>مشاهده بیشتر</span>
-            </div>
-        </div>
+      <img src={image} alt='blogCardImage' className='blogCardImage' />
+      <div className='blogCardText'>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <div className='blogShowMoreWrapper'>
+        <span>مشاهده بیشتر</span>
+      </div>
     </div>
   )
 }
