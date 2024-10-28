@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button, Layout, Menu } from 'antd';
 import './index.css'
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 
@@ -17,9 +18,9 @@ const Navbar: React.FC = () => {
   return (
     <Layout>
       <Header style={{zIndex: 1, width: '100%' }} className='navbar'>
-        <div className="logo" >
+        <Link to={'/'} className="logo" >
           <p>سالمینا</p>
-        </div>
+        </Link>
         <Menu mode="horizontal" defaultSelectedKeys={['1']} items={menuItems} />
         <Button type="primary" href="" download>
           دانلود سالمینا

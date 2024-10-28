@@ -4,6 +4,7 @@ import blogCardImage from '../../assets/images/blog.jpg'
 
 import './style.scss'
 import { BlogCardText } from './blogCardText'
+import { Link } from 'react-router-dom'
 
 
 export default function blog() {
@@ -15,9 +16,9 @@ export default function blog() {
                         <h2>بلاگ</h2>
                         <p>جدیدترین مطالب وبلاگ سالمینا را از اینجا دنبال کنید.</p>
                     </div>
-                    <div className='blogButtonWrapper'>
+                    <Link to={'/blog'} className='blogButtonWrapper'>
                         <Button type='primary' className='blogTitleButton'>مشاهده همه</Button>
-                    </div>
+                    </Link>
                 </div>
                 <div className='blogCardsWrapper'>
                     <BlogCard image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description}/>

@@ -2,6 +2,7 @@ import { Button } from 'antd';
 import downloadIcon from '../../assets/icons/download.svg'
 import bazarIcon from '../../assets/icons/cafeBazar.svg'
 import myketIcon from '../../assets/icons/myket.svg'
+import homeImage from '../../assets/images/home.png'
 
 import './style.scss'
 
@@ -26,8 +27,8 @@ const Home = () => {
                     </Button>
                 </div>
             </div>
-            <div>
-                {/* <img src={homeImage} alt='homeImage' className='homeImage' /> */}
+            <div className='homeImage'>
+                <img src={homeImage} alt='homeImage' className='homeImage' />
             </div>
         </div>
     );

@@ -1,0 +1,63 @@
+.blogPage {
+    direction: rtl;
+    padding: 80px 120px;
+    font-family: 'yekan';
+
+    .blogTitle {
+        font-size: 45px;
+        color: #013c04;
+        margin-bottom: 20px;
+    }
+
+    .searchContainer {
+        margin-bottom: 10px;
+    }
+
+    .searchInput {
+        width: 350px;
+        height: 50px;
+        background-color: #929eaa14;
+        border: none;
+        border-radius: 12px;
+        padding: 10px;
+        outline: none;
+        transition: background-color 0.3s;
+
+        &:focus {
+            background-color: #a5b2bc;
+        }
+    }
+
+    .tagContainer {
+        display: flex;
+        gap: 10px;
+    }
+
+    .tag {
+        padding: 8px 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: #929eaa29;
+        color: #232a34;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 15px;
+        font-weight: bold;
+
+        &.selected {
+            background-color: #018a08;
+            color: white;
+        }
+
+        &:hover {
+            background-color: #018a08;
+            color: white;
+        }
+    }
+
+    .blogCardsContainer {
+        display: flex;
+        flex-wrap: wrap; // Allow cards to wrap to the next line
+        justify-content: space-between; // Space between cards
+        padding-top: 100px;
+    }
+}

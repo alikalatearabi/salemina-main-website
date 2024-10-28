@@ -15,6 +15,7 @@ import Blog from './components/Blog/blog';
 import Footer from './components/Footer/footer';
 import DependencyPage from './components/DependencyPage/dependency_page';
 import StoryPage from './components/StoryPage/story_page';
+import BlogPage from './components/BlogPage/blog_page';
 
 const { Content } = Layout;
 
@@ -42,6 +43,7 @@ const App: React.FC = () => {
             </Route>
             <Route path="/dependency" element={<DependencyPage />} />
             <Route path="/story" element={<StoryPage />} />
+            <Route path="/blog" element={<BlogPage />} />
           </Routes>
           <Footer />
         </Content>
