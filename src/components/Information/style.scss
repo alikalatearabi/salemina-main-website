@@ -21,4 +21,47 @@
            color: #464E59; 
         }
     }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            padding: 50px;
+    
+            .infoCardText h2 {
+                font-size: 28px;
+            }
+    
+            .infoCardText p {
+                font-size: 18px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            height: unset;
+    
+            .infoCardText {
+                width: 100%;
+                margin-bottom: 20px;
+                order: 2;
+            }
+    
+            .infoCardText h2 {
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+    
+            .infoCardText p {
+                font-size: 18px;
+                margin-top: 5px;
+            }
+    
+            img {
+                order: 1;
+                width: 100%;
+                max-width: 300px; 
+                height: auto;
+            }
+        }
 }
