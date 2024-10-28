@@ -110,4 +110,51 @@
             }
         }
     }
+
+    // Responsive styles for smaller screens
+    @media (max-width: 768px) {
+        height: fit-content !important;
+
+        .blogWrapper {
+            height: fit-content !important;
+            padding: 60px 30px;
+            clip-path: ellipse(320% 100% at 50% 100%);
+
+            .blogHeader {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .blogTitleWrapper {
+                    h2 {
+                        font-size: 28px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+
+                .blogTitleButton {
+                    width: 100%;
+                    background-color: #d8eed9;
+                    color: #013C04;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-top: 10px;
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .blogCardsWrapper {
+            margin-top: 10px !important;
+            width: 100%;
+            flex-direction: column;
+
+            .blogCard {
+                width: 100% !important;
+                height: 350px !important;
+            }
+        }
+    }
 }
