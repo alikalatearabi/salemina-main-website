@@ -7,6 +7,7 @@
     direction: rtl;
     padding: 80px 120px;
     font-family: 'yekan';
+    clip-path: ellipse(140% 100% at 50% 100%);
 
     .lowerArc {
         position: absolute;
@@ -15,7 +16,7 @@
         right: 0;
         height: 80px;
         background-color: white;
-        clip-path: ellipse(55% 100% at 50% 100%);
+        clip-path: ellipse(60% 100% at 50% 100%);
     }
 
     .title {

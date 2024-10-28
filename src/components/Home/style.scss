@@ -5,11 +5,7 @@
     align-items: center;
     justify-content: space-between;
     height: calc(100% - 100px);
-
-    .homeText {
-        width: 50%;
-        padding: 0 120px 0 0;
-    }
+    padding: 0 120px 0 0;
 
     h1 {
         font-size: 70px;
@@ -25,12 +21,24 @@
     }
 
     .homeImage {
+        position: relative;
+        display: inline-block;
         height: 100%;
-        width: 45%;
 
         img {
-            height: 100%;
             width: auto;
+            height: 100%;
+            display: block;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(to top, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
         }
     }
 
