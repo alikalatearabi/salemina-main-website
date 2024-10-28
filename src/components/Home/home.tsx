@@ -13,15 +13,15 @@ const Home = () => {
                 <h1>سالمینا</h1>
                 <p>دستیار دیجیتال شما در انتخاب سالم ترین هاست</p>
                 <div className='buttonsWrapper'>
-                    <Button type="primary" className='directDownload' href="" download>
+                    <Button type="primary" className='directDownload downloadButton' href="" download>
                         <img src={downloadIcon} />
                         <span>دانلود مستقیم</span>
                     </Button>
-                    <Button type="primary" className='unDirectDownload' href="" download>
+                    <Button type="primary" className='unDirectDownload downloadButton' href="" download>
                         <span>دانلود از کافه بازار</span>
                         <img src={bazarIcon} />
                     </Button>
-                    <Button type="primary" className='unDirectDownload' href="" download>
+                    <Button type="primary" className='unDirectDownload downloadButton' href="" download>
                         <span>دانلود از مایکت</span>
                         <img src={myketIcon} />
                     </Button>
