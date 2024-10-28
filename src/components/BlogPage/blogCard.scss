@@ -35,7 +35,7 @@
             font-size: 22px;
         }
 
-        .cardDescription { 
+        .cardDescription {
             color: #657381; // Description text color
             overflow: hidden; // Ensure long text is cut off
             text-overflow: ellipsis; // Show ellipsis for overflow
@@ -67,5 +67,38 @@
         font-size: 20px;
         margin-left: 5px; // Space between icon and text
         color: #018A08; // Color for the link text
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        width: 90%;
+        margin: 10px 0;
+
+        .cardImage {
+            height: 200px;
+        }
+
+        .textPart {
+            padding: 10px;
+            margin-top: -20px;
+
+            .cardTitle {
+                font-size: 18px;
+            }
+
+            .cardDescription {
+                font-size: 15px;
+                height: auto;
+            }
+        }
+
+        .linkContainer {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .linkText {
+            font-size: 18px;
+        }
     }
 }

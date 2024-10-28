@@ -60,4 +60,33 @@
         justify-content: space-between; // Space between cards
         padding-top: 100px;
     }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        padding: 20px;
+
+        .blogTitle {
+            font-size: 32px;
+        }
+
+        .searchInput {
+            width: 100%;
+        }
+
+        .tagContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .tag{
+                text-align: center;
+                width: 45%;
+            }
+        }
+
+        .blogCardsContainer {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+    }
 }
