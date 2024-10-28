@@ -1,4 +1,4 @@
-.story{
+.story {
     direction: rtl;
     padding: 100px 120px;
     font-family: 'yekan';
@@ -11,27 +11,49 @@
     justify-content: center;
     font-family: 'yekan';
 
-    h2{
+    h2 {
         color: #013C04;
         font-size: 38px;
         margin: 0;
     }
 
-    p{
+    p {
         color: #464E59;
         font-size: 20px;
         text-align: justify;
     }
 
-    span{
+    span {
         color: #018A08;
         font-size: 18px;
     }
 
-    .storyLink{
+    .storyLink {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 130px; 
+        width: 130px;
+    }
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+        clip-path: ellipse(250% 100% at 50% 100%);
+        padding: 50px 30px;
+        height: auto;
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .storyLink {
+            width: 50%;
+            background-color: #d8eed9;
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
     }
 }
