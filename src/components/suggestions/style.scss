@@ -31,12 +31,12 @@
         overflow-x: auto;
         max-width: 100%;
         white-space: nowrap;
-        scrollbar-width: thin; 
+        scrollbar-width: thin;
         scrollbar-color: transparent transparent;
         padding: 20px 5px;
         font-family: 'yekan';
-    
-        -ms-overflow-style: none;   
+
+        -ms-overflow-style: none;
 
         ::-webkit-scrollbar {
             display: none;
@@ -51,28 +51,58 @@
             border-radius: 20px;
             padding: 20px;
 
-            p{
+            p {
                 margin: 0;
                 font-size: 20px;
                 font-weight: 100;
                 color: #657381;
             }
 
-            .suggestionsCardText{
+            .suggestionsCardText {
                 width: 100%;
-                h4{
+
+                h4 {
                     font-size: 16px;
                     margin: 10px 0 10px 0;
                 }
-                p{
+
+                p {
                     margin: 0;
                     font-size: 15px;
-                    white-space: normal; 
+                    white-space: normal;
                     word-wrap: break-word;
-                    word-break: break-word; 
+                    word-break: break-word;
                     color: #657381;
                     line-height: 28px;
                 }
+            }
+        }
+    }
+
+    // Responsive styles for smaller screens
+    @media (max-width: 768px) {
+        height: auto;
+
+        .suggestionsWrapper {
+            height: auto;
+            clip-path: ellipse(210% 100% at 50% 100%);
+            padding: 60px 30px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .suggestionsCardsWrapper {
+            padding: 10px 0;
+
+            .suggestionCard {
+                min-width: 300px;
+                height: auto;
             }
         }
     }
