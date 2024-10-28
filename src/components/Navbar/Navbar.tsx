@@ -1,8 +1,9 @@
 // src/components/Navbar.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Layout, Menu } from 'antd';
-import './index.css'
 import { Link } from 'react-router-dom';
+
+import './index.scss'
 
 const { Header } = Layout;
 
@@ -15,14 +16,22 @@ const menuItems = [
 ];
 
 const Navbar: React.FC = () => {
+  const [collapsed, setCollapsed] = useState(false);
+
   return (
     <Layout>
-      <Header style={{zIndex: 1, width: '100%' }} className='navbar'>
-        <Link to={'/'} className="logo" >
+      <Header style={{ zIndex: 1, width: '100%' }} className='navbar'>
+        <Link to={'/'} className="logo">
           <p>سالمینا</p>
         </Link>
-        <Menu mode="horizontal" defaultSelectedKeys={['1']} items={menuItems} />
-        <Button type="primary" href="" download>
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={['1']}
+          items={menuItems}
+          style={{ display: collapsed ? 'none' : 'flex' }}
+          
+        />
+        <Button type="primary" href="" download className='headerDownloadButton'>
           دانلود سالمینا
         </Button>
       </Header>
