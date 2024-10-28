@@ -88,6 +88,9 @@
                         font-size: 14px;
                         color: #657381;
                         margin-bottom: 40px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                 }
 
@@ -130,7 +133,7 @@
                     }
 
                     p {
-                        font-size: 17px;
+                        font-size: 18px;
                     }
                 }
 
@@ -154,6 +157,20 @@
             .blogCard {
                 width: 100% !important;
                 height: 350px !important;
+
+                .blogCardText{
+                    width: 100%;
+                    h3{
+                        width: 90%;
+                        margin: auto;
+                        font-size: 17px !important;
+                    }
+
+                    p{
+                        font-size: 16px !important;
+                        margin-bottom: 0 !important;
+                    }
+                }
             }
         }
     }

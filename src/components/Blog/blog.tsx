@@ -14,7 +14,7 @@ export default function blog() {
                 <div className="blogHeader">
                     <div className='blogTitleWrapper'>
                         <h2>بلاگ</h2>
-                        <p>جدیدترین مطالب وبلاگ سالمینا را از اینجا دنبال کنید.</p>
+                        <p>جدیدترین مطالب وبلاگ سالمینا.</p>
                     </div>
                     <Link to={'/blog'} className='blogButtonWrapper'>
                         <Button type='primary' className='blogTitleButton'>مشاهده همه</Button>
