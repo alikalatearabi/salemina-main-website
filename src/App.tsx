@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from 'antd';
-import './App.css'
+import './App.css';
 
+import ScrollToTop from './components/ScrollToTop'; // Import the component
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/home';
 import KeyFeatures from './components/KeyFeatures/keyFeatures';
@@ -22,6 +23,7 @@ const { Content } = Layout;
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop /> {/* Add this component */}
       <Layout style={{ height: '100%' }}>
         <Navbar />
         <Content style={{ backgroundColor: '#fff', height: 'Calc(100% - 70px)' }}>
@@ -49,7 +51,6 @@ const App: React.FC = () => {
         </Content>
       </Layout>
     </Router>
-
   );
 };
 
