@@ -50,18 +50,20 @@
         align-items: center;
         justify-content: space-between;
 
-        .headerDownloadButton{
+        .headerDownloadButton {
             display: none;
         }
 
-        .ant-menu-submenu-title{
+        .ant-menu-submenu-title {
             color: #018A08 !important;
             text-align: center;
         }
 
         .navbar .ant-dropdown-menu {
-            background-color: #fff; /* Set dropdown background color */
-            border: 1px solid #018A08; /* Set dropdown border color */
+            background-color: #fff;
+            /* Set dropdown background color */
+            border: 1px solid #018A08;
+            /* Set dropdown border color */
         }
     }
 
@@ -97,4 +99,12 @@
     .navbar .ant-menu.active {
         display: flex; // Show menu when active
     }
+}
+
+.ant-menu-item:hover::after {
+    border-bottom-color: #018A08 !important;
+}
+
+.ant-menu-item-selected::after {
+    border-bottom-color: #018A08 !important;
 }

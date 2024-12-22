@@ -29,7 +29,6 @@ const Navbar: React.FC = () => {
           defaultSelectedKeys={['1']}
           items={menuItems}
           style={{ display: collapsed ? 'none' : 'flex' }}
-          
         />
         <Button type="primary" href="" download className='headerDownloadButton'>
           دانلود سالمینا
