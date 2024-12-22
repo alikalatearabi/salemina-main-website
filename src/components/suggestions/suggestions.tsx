@@ -1,6 +1,6 @@
 import './style.scss'
-import SuggestionCard from './/suggestionCard';
-import { SuggesionsText } from './/suggestionsText';
+import SuggestionCard from './suggestionCard';
+import { SuggesionsText } from './suggestionsText';
 
 const Suggestions = () => {
     return (

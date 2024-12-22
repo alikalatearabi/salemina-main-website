@@ -41,6 +41,7 @@
             text-overflow: ellipsis; // Show ellipsis for overflow
             display: -webkit-box; // For ellipsis effect in multi-line
             -webkit-line-clamp: 2; // Limit to 2 lines
+            line-clamp: 2;
             -webkit-box-orient: vertical; // Required for line-clamp
             height: 60px; // Set a fixed height for the description area
             font-size: 17px;

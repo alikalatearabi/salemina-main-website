@@ -1,6 +1,8 @@
 import React from 'react';
-import './BlogCard.scss';
 import { LeftOutlined } from '@ant-design/icons';
+
+import './blogCard.scss';
+
 
 interface BlogCardProps {
   image: string;

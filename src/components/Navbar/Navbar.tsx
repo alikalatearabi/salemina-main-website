@@ -16,7 +16,7 @@ const menuItems = [
 ];
 
 const Navbar: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed] = useState(false);
 
   return (
     <Layout>
