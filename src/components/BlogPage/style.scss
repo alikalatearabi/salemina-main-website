@@ -90,3 +90,73 @@
         }
     }
 }
+
+.blogDetails {
+    direction: rtl;
+    max-width: 1500px; /* Center the content and set a max width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Subtle background for better contrast */
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+
+    .blogDetailsImage {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover; /* Ensure image scales properly */
+        border-radius: 10px; /* Match the border radius */
+        margin-bottom: 20px;
+    }
+
+    .blogDetailsTitle {
+        font-size: 28px;
+        font-weight: bold;
+        color: #018A08; /* Use the primary theme color */
+        margin-bottom: 20px;
+    }
+
+    .blogDetailsContent {
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: justify; /* Justify text for cleaner alignment */
+        color: #333; /* Use a dark gray for readability */
+        margin-bottom: 30px;
+    }
+
+    .backToBlog {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #018A08;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #45a049; /* Slightly lighter green for hover */
+        }
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blogDetails {
+        padding: 15px;
+    }
+
+    .blogDetailsTitle {
+        font-size: 24px;
+    }
+
+    .blogDetailsContent {
+        font-size: 16px;
+    }
+
+    .backToBlog {
+        font-size: 14px;
+    }
+}
+

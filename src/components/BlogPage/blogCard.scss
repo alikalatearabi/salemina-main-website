@@ -1,6 +1,6 @@
 // BlogCard.scss
 .blogCard {
-    width: calc(33.33% - 20px); // Width for 3 cards in a row with spacing
+    width: calc(100% - 20px); // Width for 3 cards in a row with spacing
     margin: 10px; // Space between cards
     border-radius: 8px; // Optional: rounded corners
     overflow: hidden; // To ensure the image doesn't overflow the card

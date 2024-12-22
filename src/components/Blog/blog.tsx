@@ -21,9 +21,9 @@ export default function blog() {
                     </Link>
                 </div>
                 <div className='blogCardsWrapper'>
-                    <BlogCard image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description}/>
-                    <BlogCard image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description}/>
-                    <BlogCard image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description}/>
+                    <BlogCard id="1" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />
+                    <BlogCard id="2" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />
+                    <BlogCard id="3" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />
                 </div>
             </div>
         </div>

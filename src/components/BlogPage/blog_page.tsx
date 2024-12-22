@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Input } from 'antd'; 
+import { Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import './style.scss';
 import BlogCard from './blog_card';
-
+import { Link } from 'react-router-dom';
 import BlogImage from '../../assets/images/blogpic1.jfif'
 
 const BlogPage: React.FC = () => {
@@ -114,13 +114,14 @@ const BlogPage: React.FC = () => {
             </div>
             <div className='blogCardsContainer'>
                 {blogPosts.map((post, index) => (
-                    <BlogCard
-                        key={index}
-                        image={post.image}
-                        title={post.title}
-                        description={post.description}
-                        linkText={post.linkText}
-                    />
+                    <Link to={`/blog/${index + 1}`} key={index} className="blogCardLink" style={{width: '33%'}}>
+                        <BlogCard
+                            image={post.image}
+                            title={post.title}
+                            description={post.description}
+                            linkText={post.linkText}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>
