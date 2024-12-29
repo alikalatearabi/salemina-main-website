@@ -94,21 +94,12 @@
             width: 90%;
 
             .footerLink {
-                &:nth-child(-n+3) {
-                    width: 32%; 
-                }
-
-                &:nth-child(n+4) {
-                    width: 49%; 
-                }
-                border: 2px solid #232A34;
-                font-size: 18px;
+                width: 45%;
+                border: 1px solid #232A34;
                 font-weight: bold;
                 margin: 5px 0;
                 text-align: center;
-                border-radius: 15dx;
-
-
+                border-radius: 15px;
             }
         }
 
@@ -146,3 +137,13 @@
     }
 
 }
+
+.footerLink {
+    color: inherit; /* Match the parent text color */
+    text-decoration: none; /* Remove the underline */
+    cursor: pointer;
+  
+    &:hover {
+      color: #018A08; /* Change color on hover */
+    }
+  }

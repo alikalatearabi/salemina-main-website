@@ -6,6 +6,7 @@ import bazarIcon from '../../assets/icons/cafeBazar.svg'
 import myketIcon from '../../assets/icons/myket.svg'
 import linkedin from '../../assets/icons/linkedin.svg'
 import instagram from '../../assets/icons/insta.svg'
+import { Link } from 'react-router-dom'
 
 
 export default function footer() {
@@ -15,11 +16,8 @@ export default function footer() {
         <h1>سالمینا</h1>
       </div>
       <div className='footerLinksWrapper'>
-        <div className='footerLink'>ویژگی ها</div>
-        <div className='footerLink'>نحوه کارکرد</div>
-        <div className='footerLink'>درباره ما</div>
-        <div className='footerLink'>تماس با ما</div>
-        <div className='footerLink'>وبلاگ</div>
+        <Link to="/story" className="footerLink">درباره ما</Link>
+        <Link to="/blog" className="footerLink">وبلاگ</Link>
       </div>
       <div className='footerDownloadLinksWrapper'>
         <Button type="primary" className='directDownload' href="" download>
