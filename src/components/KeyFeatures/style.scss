@@ -4,9 +4,9 @@
     background-size: cover;
     background-position: center;
     direction: rtl;
-    padding: 80px 120px;
+    padding: 50px 120px 120px 120px;
     font-family: 'yekan';
-    clip-path: ellipse(140% 100% at 50% 100%);
+    clip-path: ellipse(180% 100% at 50% 100%);
 
     .lowerArc {
         position: absolute;
@@ -15,7 +15,7 @@
         right: 0;
         height: 80px;
         background-color: white;
-        clip-path: ellipse(60% 100% at 50% 100%);
+        clip-path: ellipse(80% 100% at 50% 100%);
     }
 
     .title {
@@ -67,7 +67,7 @@
 
     /* Responsive Adjustments */
     @media (max-width: 1024px) {
-        padding: 40px;
+        padding: 40px 40px 120px 40px;
 
         .title h1 {
             font-size: 32px;
