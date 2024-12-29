@@ -1,31 +1,30 @@
-import { Button } from 'antd'
-import BlogCard from './blogCard'
-import blogCardImage from '../../assets/images/blog.jpg'
+import { Button } from 'antd';
+import BlogCard from './blogCard';
+import blogCardImage from '../../assets/images/blog.jpg';
 
-import './style.scss'
-import { BlogCardText } from './blogCardText'
-import { Link } from 'react-router-dom'
+import './style.scss';
+import { BlogCardText } from './blogCardText';
+import { Link } from 'react-router-dom';
 
-
-export default function blog() {
+export default function Blog() {
     return (
-        <div className="blog">
-            <div className='blogWrapper'>
+        <div className="blog" id="blogSection"> {/* Add id */}
+            <div className="blogWrapper">
                 <div className="blogHeader">
-                    <div className='blogTitleWrapper'>
+                    <div className="blogTitleWrapper">
                         <h2>بلاگ</h2>
                         <p>جدیدترین مطالب وبلاگ سالمینا.</p>
                     </div>
-                    <Link to={'/blog'} className='blogButtonWrapper'>
-                        <Button type='primary' className='blogTitleButton'>مشاهده همه</Button>
+                    <Link to={'/blog'} className="blogButtonWrapper">
+                        <Button type="primary" className="blogTitleButton">مشاهده همه</Button>
                     </Link>
                 </div>
-                <div className='blogCardsWrapper'>
+                <div className="blogCardsWrapper">
                     <BlogCard id="1" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />
                     <BlogCard id="2" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />
                     <BlogCard id="3" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />
                 </div>
             </div>
         </div>
-    )
+    );
 }

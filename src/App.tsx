@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 import './App.css';
 
-import ScrollToTop from './components/ScrollToTop'; 
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/home';
 import KeyFeatures from './components/KeyFeatures/keyFeatures';
@@ -33,7 +33,14 @@ const App: React.FC = () => {
               <>
                 <Home />
                 <KeyFeatures />
-                <InfoCard title={infoCardText[0].title} description={infoCardText[0].description} direction='rtl' justify='justify' image={infoCardText[0].image} />
+                <InfoCard
+                  id="infoCardSection"
+                  title={infoCardText[0].title}
+                  description={infoCardText[0].description}
+                  direction="rtl"
+                  justify="justify"
+                  image={infoCardText[0].image}
+                />
                 <InfoCard title={infoCardText[1].title} description={infoCardText[1].description} direction='ltr' justify='end' image={infoCardText[1].image} />
                 <InfoCard title={infoCardText[2].title} description={infoCardText[2].description} direction='rtl' justify='justify' image={infoCardText[2].image} />
                 <InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} />

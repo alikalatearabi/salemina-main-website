@@ -10,7 +10,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ image, title, description, id }) => {
   return (
-    <Link to={`/blog/${id}`} className="blogCardLink" style={{width:'32%'}}> 
+    <Link to={`/blog/${id}`} className="blogCardLink"> 
       <div className="blogCard">
         <img src={image} alt="blogCardImage" className="blogCardImage" />
         <div className="blogCardText">
