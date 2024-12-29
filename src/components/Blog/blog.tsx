@@ -8,16 +8,18 @@ import { Link } from 'react-router-dom';
 
 export default function Blog() {
     return (
-        <div className="blog" id="blogSection"> {/* Add id */}
+        <div className="blog" id="blogSection">
             <div className="blogWrapper">
                 <div className="blogHeader">
-                    <div className="blogTitleWrapper">
-                        <h2>بلاگ</h2>
-                        <p>جدیدترین مطالب وبلاگ سالمینا.</p>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                        <div className="blogTitleWrapper">
+                            <h2>بلاگ</h2>
+                        </div>
+                        <Link to={'/blog'} className="blogButtonWrapper">
+                            <Button type="primary" className="blogTitleButton">مشاهده همه</Button>
+                        </Link>
                     </div>
-                    <Link to={'/blog'} className="blogButtonWrapper">
-                        <Button type="primary" className="blogTitleButton">مشاهده همه</Button>
-                    </Link>
+                    <p style={{marginTop: '20px', fontSize: '16px', color: '#464E59'}}>جدیدترین مطالب وبلاگ سالمینا را از اینجا دنبال کنید.</p>
                 </div>
                 <div className="blogCardsWrapper">
                     <BlogCard id="1" image={blogCardImage} title={BlogCardText.title} description={BlogCardText.description} />

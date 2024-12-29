@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Story() {
   return (
-    <div className="story" id="aboutSection"> {/* Add id */}
+    <div className="story" id="aboutSection"> 
       <h2>{storyText.title}</h2>
       <p>{storyText.description}</p>
       <Link to={'/story'} className="storyLink">
