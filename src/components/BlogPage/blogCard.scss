@@ -24,7 +24,7 @@
         clip-path: ellipse(120% 100% at 50% 100%); // Arc top shape
         margin-top: -30px; // Adjust this value to control the overlap
         position: relative; // Relative positioning for proper stacking
-        z-index: 1; // Ensure the text part is above the image
+        z-index: 0; // Ensure the text part is above the image
         flex-grow: 1; // Allow this part to grow and take available space
 
         .cardTitle {

@@ -49,10 +49,16 @@
         }
 
         .dependencyLink {
-            width: 50%;
+            width: 30%;
             background-color: #d8eed9;
             padding: 10px 20px;
             border-radius: 15px;
+        }
+    }
+
+    @media (max-width: 428px) {
+        .dependencyLink{
+            width: 100%;
         }
     }
 }
