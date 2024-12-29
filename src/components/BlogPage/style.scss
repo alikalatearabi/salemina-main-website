@@ -59,6 +59,10 @@
         flex-wrap: wrap; // Allow cards to wrap to the next line
         justify-content: space-between; // Space between cards
         padding-top: 100px;
+
+        .blogCardLink{
+            width: 33%;
+        }
     }
 
     /* Responsive styles */
@@ -143,6 +147,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .blogCardLink{
+        width: 100% !important;
+        .blogCard{
+            width: 100% !important;
+        }
+    }
     .blogDetails {
         padding: 15px;
     }

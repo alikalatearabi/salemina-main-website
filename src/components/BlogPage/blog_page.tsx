@@ -114,7 +114,7 @@ const BlogPage: React.FC = () => {
             </div>
             <div className='blogCardsContainer'>
                 {blogPosts.map((post, index) => (
-                    <Link to={`/blog/${index + 1}`} key={index} className="blogCardLink" style={{width: '33%'}}>
+                    <Link to={`/blog/${index + 1}`} key={index} className="blogCardLink">
                         <BlogCard
                             image={post.image}
                             title={post.title}
