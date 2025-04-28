@@ -43,9 +43,9 @@ const DependencyPage = () => {
           <p className="text-content">{howSaleminaWorksText.heartAssociationText}</p>
           <div className="bottom-space"></div>
         </div>
-        <div>
+        {/* <div>
           <Blog />
-        </div>
+        </div> */}
       </div>
     );
   };
