@@ -9,7 +9,7 @@ import './style.scss'
 
 
 import { dependencyDescription, howSaleminaWorksText } from './dependecy_page_text';
-import Blog from '../Blog/blog';
+// import Blog from '../Blog/blog';
 
 const DependencyPage = () => {
     return (
