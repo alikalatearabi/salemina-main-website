@@ -2,6 +2,7 @@
     font-family: 'yekan';
     direction: rtl;
     background: #eeeeee;
+    width: 100%;
 }
 
 .dependency-image {
@@ -20,9 +21,25 @@
 }
 
 .content-section {
-    padding: 0 80px;
-    background: #eeeeee;
+    padding: 20px 80px;
+    /* Add padding for spacing */
+    background: #f9f9f9;
+    /* Light color background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Subtle shadow for elevation */
+    margin: auto;
+    width: 90%;
 }
+
+.first-section {
+    border-radius: 10px 10px 0 0;
+}
+
+.last-section {
+    margin-bottom: 70px;
+    border-radius: 0 0 10px 10px;
+}
+
 
 .section-title {
     font-weight: bold;
@@ -69,7 +86,10 @@
     }
 
     .content-section {
-        padding: 0 20px;
+        .content-section {
+            padding: 20px;
+            margin-bottom: 15px;
+        }
     }
 
     .section-title {

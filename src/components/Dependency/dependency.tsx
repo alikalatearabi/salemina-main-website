@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Dependency = () => {
     return (
-        <div className='dependency'>
+        <div className='dependency' id="dependency">
             <h2>{DependencyText.title}</h2>
             <p>{DependencyText.description}</p>
             <Link to='/dependency' className='dependencyLink'>

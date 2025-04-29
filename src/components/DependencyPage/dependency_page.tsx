@@ -16,11 +16,11 @@ const DependencyPage = () => {
       <div className="dependency-page">
         <img src={dependencyImage} alt="Dependency" className="dependency-image" />
         <div className="image-clip"></div>
-        <div className="content-section">
+        <div className="content-section first-section">
           <h2 className="section-title">بیانیه استقلال سالمینا</h2>
           <p className="text-content">{dependencyDescription}</p>
         </div>
-        <div className="content-section">
+        <div className="content-section last-section">
           <h2 className="section-title">نحوه کارکرد سالمینا</h2>
           <p className="text-content">{howSaleminaWorksText.nutritionPart}</p>
           <p className="text-content">{howSaleminaWorksText.nutritionPart2}</p>

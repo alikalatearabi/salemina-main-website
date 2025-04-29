@@ -2,6 +2,7 @@
     font-family: 'yekan';
     direction: rtl;
     background: #eeeeee;
+    width: 100%;
 }
 
 .story-image {
@@ -19,40 +20,54 @@
     transform: translateY(-50px);
 }
 
-.story-content,
-.story-goals {
-    padding: 0px 80px;
-    background: #eeeeee;
+/* Content Section Updates */
+.story-page-container .content-section {
+    padding: 20px 80px;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 90%;
 }
 
-.story-title {
+.story-page-container .first-section {
+    border-radius: 10px 10px 0 0;
+}
+
+.story-page-container .last-section {
+    margin-bottom: 70px;
+    border-radius: 0 0 10px 10px;
+}
+
+.section-title {
     font-weight: bold;
     color: #013c04;
     font-size: 35px;
     margin-bottom: 0;
 }
 
-.story-paragraph,
+.text-content,
 .story-list-item {
     color: #464e59;
     line-height: 1.6;
     font-size: 22px;
 }
 
-.story-goals {
-    padding: 50px 80px 0;
-}
-
 .story-list {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .story-list-item {
     margin-bottom: 10px;
+    background-color: #ffffff6c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: #013c04;
 }
 
-/* Responsive styles for mobile devices */
+/* Responsive styles */
 @media (max-width: 768px) {
     .story-image {
         height: 250px;
@@ -64,35 +79,43 @@
         transform: translateY(-30px);
     }
 
-    .story-content,
-    .story-goals {
-        padding: 0px 20px;
+    .story-page-container .content-section {
+        padding: 20px;
+        margin-bottom: 15px;
     }
 
-    .story-title {
-        font-size: 24px;
+    .section-title {
+        font-size: 28px;
     }
 
-    .story-paragraph,
+    .text-content,
     .story-list-item {
         font-size: 18px;
     }
 
-    .story-goals {
-        padding: 30px 20px 0;
+    .story-list-item {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ellipse-background {
+        clip-path: ellipse(95% 100% at 50% 100%);
     }
 
-    .story-list {
-        padding: 0;
+    .section-title {
+        font-size: 24px;
+    }
+
+    .text-content,
+    .story-list-item {
+        font-size: 16px;
+        line-height: 1.4;
     }
 
     .story-list-item {
+        padding: 10px;
         margin-bottom: 8px;
-        background-color: #ffffff6c;
-        padding: 20px;
-        border-radius: 20px;
-        margin: 20px 0;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        color: #013c04;
     }
 }

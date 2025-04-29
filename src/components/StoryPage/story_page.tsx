@@ -2,28 +2,24 @@ import StoryImage from '../../assets/images/storyPage.jfif';
 import Blog from '../Blog/blog';
 import { storyDescription, storyText } from './story_page_text';
 
-import './style.scss'
+import './style.scss';
 
 const StoryPage = () => {
     return (
         <div className="story-page-container">
-            <img
-                src={StoryImage}
-                alt="Dependency"
-                className="story-image"
-            />
+            <img src={StoryImage} alt="Story" className="story-image" />
             <div className="ellipse-background"></div>
 
-            <div className="story-content">
-                <h2 className="story-title">داستان شکل گیری سالمینا</h2>
-                <p className="story-paragraph">{storyDescription}</p>
-                <p className="story-paragraph">{storyText.part1}</p>
-                <p className="story-paragraph">{storyText.part2}</p>
+            <div className="content-section first-section">
+                <h2 className="section-title">داستان شکل گیری سالمینا</h2>
+                <p className="text-content">{storyDescription}</p>
+                <p className="text-content">{storyText.part1}</p>
+                <p className="text-content">{storyText.part2}</p>
             </div>
 
-            <div className="story-goals">
-                <h2 className="story-title">اهداف سالمینا</h2>
-                <p className="story-paragraph">
+            <div className="content-section last-section">
+                <h2 className="section-title">اهداف سالمینا</h2>
+                <p className="text-content">
                     اهداف سالمینا بر پایه ارتقای سلامت عمومی، آگاهی‌بخشی، و ایجاد تغییرات مثبت در عادات غذایی جامعه بنا شده است
                 </p>
                 <ul className="story-list">

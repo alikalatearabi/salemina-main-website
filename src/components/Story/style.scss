@@ -1,14 +1,14 @@
 .story {
     direction: rtl;
-    padding: 100px 120px;
+    padding: 0px 120px;
     font-family: 'yekan';
-    height: 650px;
+    height: 450px;
     background-color: #eeeeee;
-    clip-path: ellipse(170% 100% at 50% 100%);
+    // clip-path: ellipse(170% 100% at 50% 100%);
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     font-family: 'yekan';
 
     h2 {
@@ -37,7 +37,7 @@
 
     // Responsive adjustments
     @media (max-width: 768px) {
-        clip-path: ellipse(250% 100% at 50% 100%);
+        // clip-path: ellipse(250% 100% at 50% 100%);
         padding: 50px 30px;
         height: auto;
 

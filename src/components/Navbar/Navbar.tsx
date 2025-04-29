@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Layout } from 'antd';
 import { HashLink as Link } from 'react-router-hash-link';
 import { MenuOutlined } from '@ant-design/icons';
+import { useLocation } from 'react-router-dom';
 import logo from '../../assets/images/Logo.svg';
 
 import './index.scss';
@@ -11,10 +12,10 @@ const { Header } = Layout;
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => {
-      // Toggle the overflow style when the menu is toggled
       if (!prev) {
         document.body.style.overflow = 'hidden';
       } else {
@@ -35,17 +36,18 @@ const Navbar: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    // Cleanup overflow style when component unmounts or menu is closed
     return () => {
       document.body.style.overflow = 'auto';
     };
   }, []);
 
+  const isHomePage = location.pathname === '/';
+
   return (
     <Layout>
       <Header style={{ zIndex: 1, width: '100%' }} className="navbar">
         <Link to={'/'} className="logo">
-        <img src={logo} alt="logo" style={{ width: '45px', marginTop: '25px'}} />
+          <img src={logo} alt="logo" style={{ width: '45px', marginTop: '25px' }} />
         </Link>
 
         {/* Desktop Menu */}
@@ -53,16 +55,40 @@ const Navbar: React.FC = () => {
           <nav className="desktopMenu">
             <ul>
               <li>
-                <Link smooth to="#keyFeatures">ویژگی ها</Link>
+                {isHomePage ? (
+                  <Link smooth to="#keyFeatures">
+                    ویژگی ها
+                  </Link>
+                ) : (
+                  <Link to="/#keyFeatures">ویژگی ها</Link>
+                )}
               </li>
               <li>
-                <Link smooth to="#infoCardSection">نحوه کاربرد</Link>
+                {isHomePage ? (
+                  <Link smooth to="#dependency">
+                    بیانیه سالمینا
+                  </Link>
+                ) : (
+                  <Link to="/dependency">بیانیه سالمینا</Link>
+                )}
               </li>
               <li>
-                <Link smooth to="#aboutSection">درباره ما</Link>
+                {isHomePage ? (
+                  <Link smooth to="#aboutSection">
+                    درباره ما
+                  </Link>
+                ) : (
+                  <Link to="/story">درباره ما</Link>
+                )}
               </li>
               <li>
-                <Link smooth to="#blogSection">وبلاگ</Link>
+                {isHomePage ? (
+                  <Link smooth to="#blogSection">
+                    وبلاگ
+                  </Link>
+                ) : (
+                  <Link to="/blog">وبلاگ</Link>
+                )}
               </li>
             </ul>
           </nav>
@@ -84,24 +110,48 @@ const Navbar: React.FC = () => {
                 </Button>
                 <ul>
                   <li>
-                    <Link smooth to="#keyFeatures" onClick={toggleMenu}>
-                      ویژگی ها
-                    </Link>
+                    {isHomePage ? (
+                      <Link smooth to="#keyFeatures" onClick={toggleMenu}>
+                        ویژگی ها
+                      </Link>
+                    ) : (
+                      <Link to="/#keyFeatures" onClick={toggleMenu}>
+                        ویژگی ها
+                      </Link>
+                    )}
                   </li>
                   <li>
-                    <Link smooth to="#infoCardSection" onClick={toggleMenu}>
-                      نحوه کاربرد
-                    </Link>
+                    {isHomePage ? (
+                      <Link smooth to="#dependency" onClick={toggleMenu}>
+                        بیانیه سالمینا
+                      </Link>
+                    ) : (
+                      <Link to="/dependency" onClick={toggleMenu}>
+                        بیانیه سالمینا
+                      </Link>
+                    )}
                   </li>
                   <li>
-                    <Link smooth to="#aboutSection" onClick={toggleMenu}>
-                      درباره ما
-                    </Link>
+                    {isHomePage ? (
+                      <Link smooth to="#aboutSection" onClick={toggleMenu}>
+                        درباره ما
+                      </Link>
+                    ) : (
+                      <Link to="/story" onClick={toggleMenu}>
+                        درباره ما
+                      </Link>
+                    )}
                   </li>
                   <li>
-                    <Link smooth to="#blogSection" onClick={toggleMenu}>
-                      وبلاگ
-                    </Link>
+                    {isHomePage ? (
+                      <Link smooth to="#blogSection" onClick={toggleMenu}>
+                        وبلاگ
+                      </Link>
+                    ) : (
+                      <Link to="/blog" onClick={toggleMenu}>
+                        وبلاگ
+                      </Link>
+                    )}
                   </li>
                 </ul>
               </nav>
@@ -109,7 +159,6 @@ const Navbar: React.FC = () => {
             <MenuOutlined className="menuToggle" onClick={toggleMenu} />
           </>
         )}
-
       </Header>
     </Layout>
   );

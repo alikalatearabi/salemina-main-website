@@ -6,7 +6,7 @@ interface InfoCardProps {
     direction: 'rtl' | 'ltr';
     justify: 'justify' | 'end';
     image: string;
-    id?: string; // Optional id prop
+    id?: string; 
 }
 
 const InfoCard: React.FC<InfoCardProps> = ({ title, description, direction, justify, image, id }) => {

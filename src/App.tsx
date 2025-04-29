@@ -10,7 +10,6 @@ import KeyFeatures from './components/KeyFeatures/keyFeatures';
 import InfoCard from './components/Information/infoCard';
 import { infoCardText } from './components/Information/infoCardDesc';
 import Dependency from './components/Dependency/dependency';
-import Suggestions from './components/suggestions/suggestions';
 import Story from './components/Story/story';
 import Blog from './components/Blog/blog';
 import Footer from './components/Footer/footer';
@@ -45,7 +44,6 @@ const App: React.FC = () => {
                 <InfoCard title={infoCardText[2].title} description={infoCardText[2].description} direction='rtl' justify='justify' image={infoCardText[2].image} />
                 <InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} />
                 <Dependency />
-                <Suggestions />
                 <Story />
                 <Blog />
               </>
