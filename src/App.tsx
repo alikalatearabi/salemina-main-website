@@ -11,7 +11,7 @@ import InfoCard from './components/Information/infoCard';
 import { infoCardText } from './components/Information/infoCardDesc';
 import Dependency from './components/Dependency/dependency';
 import Story from './components/Story/story';
-import Blog from './components/Blog/blog';
+// import Blog from './components/Blog/blog';
 import Footer from './components/Footer/footer';
 import DependencyPage from './components/DependencyPage/dependency_page';
 import StoryPage from './components/StoryPage/story_page';
@@ -45,7 +45,7 @@ const App: React.FC = () => {
                 {/*<InfoCard title={infoCardText[3].title} description={infoCardText[3].description} direction='ltr' justify='end' image={infoCardText[3].image} /> */}
                 <Dependency />
                 <Story />
-                <Blog />
+                {/* <Blog /> */}
               </>
             }>
             </Route>

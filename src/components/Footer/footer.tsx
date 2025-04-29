@@ -17,7 +17,7 @@ export default function footer() {
       </div>
       <div className='footerLinksWrapper'>
         <Link to="/story" className="footerLink">درباره ما</Link>
-        <Link to="/blog" className="footerLink">وبلاگ</Link>
+        {/* <Link to="/blog" className="footerLink">وبلاگ</Link> */}
       </div>
       <div className='footerDownloadLinksWrapper'>
         <Button type="primary" className='directDownload' href="" download>

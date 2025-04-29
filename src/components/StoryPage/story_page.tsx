@@ -1,5 +1,5 @@
 import StoryImage from '../../assets/images/storyPage.jfif';
-import Blog from '../Blog/blog';
+// import Blog from '../Blog/blog';
 import { storyDescription, storyText } from './story_page_text';
 
 import './style.scss';
@@ -42,9 +42,9 @@ const StoryPage = () => {
                 <div style={{ marginBottom: '100px' }}></div>
             </div>
 
-            <div>
+            {/* <div>
                 <Blog />
-            </div>
+            </div> */}
         </div>
     );
 };
