@@ -17,7 +17,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ title, description, direction, just
                 <p style={{ textAlign: justify }}>{description}</p>
             </div>
             <div>
-                <img src={image} alt="infoImage" style={{width: '200px', borderRadius: '20px'}} />
+                <img src={image} alt="infoImage" style={{width: '200px', borderRadius: '20px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'}} />
             </div>
         </div>
     );

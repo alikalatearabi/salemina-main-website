@@ -1,7 +1,7 @@
-import dashboardImage from '../../assets/images/dashboard.jpg'
+import dashboardImage from '../../assets/images/mainDashboard.jpg'
 import compareImage from '../../assets/images/compare.jpg'
-import sortImage from '../../assets/images/sort.jpg'
-import preventImage from '../../assets/images/prevent.jpg'
+import sortImage from '../../assets/images/dashboard.jpg'
+import preventImage from '../../assets/images/productPage.jpg'
 
 
 export const infoCardText = [
@@ -11,9 +11,9 @@ export const infoCardText = [
         image: dashboardImage
     },
     {
-        title: 'اسکن بارکد، جست‌وجوی سریع و مقایسه محصولات',
-        description: 'اطلاعات تغذیه‌ای هر محصول رو در کمترین زمان ببینید. همراه با تحلیل بیش از 7000 محصول غذایی در 65 خوشه و 148 زیرخوشه غذایی',
-        image: compareImage
+        title: 'پیشگیری از ابتلا به بیماری‌ها',
+        description: 'سالمینا با تحلیل الگوی مصرف شما و در نظر گرفتن ارزش غذایی محصولات، به شما هشدارهایی می‌ده تا از خطر ابتلا به بیماری‌هایی مثل دیابت، فشار خون، و نارسایی‌های کلیوی، کبدی و قلبی/عروقی جلوگیری کنید و زندگی سالم‌تری داشته باشید.',
+        image: preventImage
     },
     {
         title: 'رتبه‌بندی محصولات بر اساس ملاحظات و بیماری‌های کاربر',
@@ -21,9 +21,9 @@ export const infoCardText = [
         image: sortImage
     },
     {
-        title: 'پیشگیری از ابتلا به بیماری‌ها',
-        description: 'سالمینا با تحلیل الگوی مصرف شما و در نظر گرفتن ارزش غذایی محصولات، به شما هشدارهایی می‌ده تا از خطر ابتلا به بیماری‌هایی مثل دیابت، فشار خون، و نارسایی‌های کلیوی، کبدی و قلبی/عروقی جلوگیری کنید و زندگی سالم‌تری داشته باشید.',
-        image: preventImage
-    },
+        title: 'اسکن بارکد، جست‌وجوی سریع و مقایسه محصولات',
+        description: 'اطلاعات تغذیه‌ای هر محصول رو در کمترین زمان ببینید. همراه با تحلیل بیش از 7000 محصول غذایی در 65 خوشه و 148 زیرخوشه غذایی',
+        image: compareImage
+    }
 
 ]
