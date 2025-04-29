@@ -9,7 +9,7 @@ import './style.scss'
 
 
 import { dependencyDescription, howSaleminaWorksText } from './dependecy_page_text';
-import Blog from '../Blog/blog';
+// import Blog from '../Blog/blog';
 
 const DependencyPage = () => {
     return (
@@ -43,9 +43,9 @@ const DependencyPage = () => {
           <p className="text-content">{howSaleminaWorksText.heartAssociationText}</p>
           <div className="bottom-space"></div>
         </div>
-        <div>
+        {/* <div>
           <Blog />
-        </div>
+        </div> */}
       </div>
     );
   };
